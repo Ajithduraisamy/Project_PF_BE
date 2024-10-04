@@ -16,7 +16,7 @@ app.use(cors({
 const URL = process.env.URL;
 let db;
 
-// Function to connect to MongoDB (singleton pattern)
+// Function to connect to MongoDB
 async function connectTodb() {
     if (!db) {
         try {
